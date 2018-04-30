@@ -1,7 +1,7 @@
 <?php
 	include "../db/connect.php";
 	$userid = $_POST['userid'];
-	$sql = "select * from users where userid = ".$userid;
+	$sql = "select * from users ";
 
 	$result = $conn->query($sql);
 	$obj = new StdClass();
