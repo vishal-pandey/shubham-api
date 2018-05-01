@@ -15,6 +15,8 @@
 
 	if($conn->query($sql)){
 		echo "success";
+	}else{
+		echo $sql;
 	}
 	
 
