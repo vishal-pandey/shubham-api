@@ -19,5 +19,5 @@
 			}
 			// echo "{}]";
 
-			echo $data_array;
+			var_dump($data_array);
 ?> 
