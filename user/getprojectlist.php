@@ -19,4 +19,5 @@
 			}
 			// echo "{}]";
 
+			echo $data_array;
 ?> 
