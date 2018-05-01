@@ -14,7 +14,7 @@
 
 				//if (json_encode($obj) != "") {
 					// echo json_encode($obj);
-					array_push(data_array, json_encode($obj));
+					// array_push(data_array, json_encode($obj));
 				//}
 			}
 			// echo "{}]";
