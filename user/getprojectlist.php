@@ -11,11 +11,11 @@
 	echo "[";
 			while( $obj = $result->fetch_object() ) {
 
-				if (json_encode($obj) != "") {
+				//if (json_encode($obj) != "") {
 					echo json_encode($obj);
 					echo ",";
-				}
+				//}
 			}
 			echo "{}]";
 
-?>
+?> 
