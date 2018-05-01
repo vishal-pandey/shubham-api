@@ -7,7 +7,7 @@
 
 	$result = $conn->query($sql);
 	$obj = new StdClass();
-	var data_array[];
+	$data_array = array();
 
 	// echo "[";
 			while( $obj = $result->fetch_object() ) {
