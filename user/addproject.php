@@ -1,6 +1,7 @@
 <?php
 	include "../db/connect.php";
 	
+	$userid = $_POST["userid"];
 	$pid = "p_".rand(00000000,99999999);
 	$pname = $_POST["pname"];
 	$startdate = $_POST["startdate"];
@@ -14,7 +15,10 @@
 	
 
 	if($conn->query($sql)){
-		echo "success";
+		$sql = "insert into assignment values ('{$userid}', '{$pid}')";
+		if ($conn->query($sql)) {
+			echo "success";
+		}
 	}else{
 		echo $sql;
 	}
