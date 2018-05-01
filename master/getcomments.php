@@ -1,6 +1,7 @@
 <?php
 	include "../db/connect.php";
-	$sql = "select * from comment";
+	$pid = $_POST['pid']; 
+	$sql = "select * from comment where pid = '{$pid}'";
 
 	$result = $conn->query($sql);
 	$obj = new StdClass();
