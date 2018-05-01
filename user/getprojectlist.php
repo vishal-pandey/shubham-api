@@ -19,5 +19,7 @@
 			}
 			// echo "{}]";
 
-			var_dump($data_array);
+			echo json_encode($data_array);
+
+			// var_dump($data_array);
 ?> 
