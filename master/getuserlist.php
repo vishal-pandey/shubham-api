@@ -1,7 +1,7 @@
 <?php
 	include "../db/connect.php";
 
-	$sql = "select * from users";
+	$sql = "select * from users where userid like 'u%'";
 
 
 	$result = $conn->query($sql);
