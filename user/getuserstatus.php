@@ -1,6 +1,6 @@
 <?php
 	include "../db/connect.php";
-	echo $userid = $_POST['userid'];
+	echo $_POST['userid'];
 	$sql = " select count(pid) as total from task where pid in (select pid from assignment where userid = '{$userid}')";
 
 	$result = $conn->query($sql);
