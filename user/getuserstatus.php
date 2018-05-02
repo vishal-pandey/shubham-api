@@ -7,7 +7,9 @@
 	$obj = new StdClass();
 	$obj = $result->fetch_object();
 
-	$total = $obj->total;
+	echo $total = $obj->total;
+	echo $sql;
+
 
 	$sql = " select count(pid) as complete from task where pid in (select pid from assignment where userid = '{$userid}') and progress = '1'";
 
@@ -16,7 +18,7 @@
 	$obj = $result->fetch_object();
 
 	$complete = $obj->complete;
-
+	echo $sql;
 
 	$sql = " select count(pid) as uncomplete from task where pid in (select pid from assignment where userid = '{$userid}') and progress = '0'";
 
@@ -25,6 +27,7 @@
 	$obj = $result->fetch_object();
 
 	$uncomplete = $obj->uncomplete;
+	echo $sql;
 	
 	echo '{
 					"total": "'.$total.'",
