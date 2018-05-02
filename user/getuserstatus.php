@@ -27,9 +27,9 @@
 	$uncomplete = $obj->uncomplete;
 	
 	echo '{
-					"total": "'.$total.'"
-					"complete": "'.$complete.'"
-					"uncomplete": "'.$uncomplete.'"
+					"total": "'.$total.'",
+					"complete": "'.$complete.'",
+					"uncomplete": "'.$uncomplete.'",
 				}
 					'
 ?>
