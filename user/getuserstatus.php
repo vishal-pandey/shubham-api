@@ -29,7 +29,7 @@
 	echo '{
 					"total": "'.$total.'",
 					"complete": "'.$complete.'",
-					"uncomplete": "'.$uncomplete.'",
+					"uncomplete": "'.$uncomplete.'"
 				}
-					'
+					';
 ?>
