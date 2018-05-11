@@ -1,5 +1,5 @@
 <?php
-	include "../db/connect.php";
+	include "./db/connect.php";
 
 	$sql = "select * from switch where sn = '1'";
 
